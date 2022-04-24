@@ -1,0 +1,29 @@
+{
+    "menu": [
+      {
+        "url": "admin/",
+        "name": "Dashboard",
+        "icon": "circle",
+        "slug": "admin.dashboard"
+      },
+  
+      {
+        "navheader": "Administration",
+        "slug": ""
+      },    
+      
+      {
+        "name": "Bet Management",
+        "icon": "hexagon",
+        "slug": "admin.bet.*",
+     
+        "url": "admin/bets"      
+      }
+      
+      
+     
+      
+     
+    ]
+  }
+  

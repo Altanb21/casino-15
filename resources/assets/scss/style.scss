@@ -1,0 +1,1010 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+@import "variables/_variables";
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.brand-section{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	a{
+		font-size: 23px;
+		font-weight: 600;
+	}
+}
+.horizontal-layout nav.navbar .container{	
+	/*width: 1190px;*/
+    width:95%;
+	height: 60px;
+}
+
+.feather-32 {
+	width:32px;
+	height:32px;
+}
+
+.feather-24 {
+	width:24px;
+	height:24px;
+}
+
+.navbar-nav a.nav-link:hover,
+.navbar-nav a.nav-link:active,
+.navbar-nav a.nav-link.active {
+    color: $primary !important;    
+    background-color: transparent !important;
+}
+
+.navbar-nav a.nav-link{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #6e6b7b !important;
+	/*min-width:150px;*/
+}
+
+li.nav-item{
+	line-height: 20px;
+    border-right: 1px solid #ccc;
+    padding: 8px 30px;
+}
+
+li.nav-item:last-child {
+    border-right: none;
+}
+
+li.nav-item.helpline{
+    line-height: 20px;    
+    text-align: center;
+    margin-top: 5px;
+}
+
+li.nav-item.helpline .text{
+    color: $primary !important;
+}
+
+li.nav-item.helpline .phone{
+    color: $secondary !important;
+}
+
+.main-banner img{
+	filter: brightness(60%);
+}
+
+.main-banner .text{
+    position: absolute;
+    left: 108px;
+    top: 230px;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 81px;
+    color: #FFFFFF;
+	
+}
+
+.main-banner .bottom-content{
+	position: absolute;
+    margin-top: -260px;
+	height:260px;
+    background: #fff;
+    width: 60%;
+    display: flex;
+    padding: 50px;
+}
+
+.main-banner .bottom-content .title{
+	font-size: 28px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.main-banner .bottom-content .content-section {
+	width:50%;
+	padding:0 50px;
+}
+
+.bottom-button-block{	
+    position: absolute;
+    width: 20%;
+    padding: 45px;
+    margin-top: -130px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+	height:130px;
+}
+
+.bottom-button-block.register-now{
+	right: 20%;
+    background: $secondary;
+}
+
+.bottom-button-block.championships{
+	right: 0;
+    background: $primary;
+}
+
+.bottom-button-block a{
+	color:#fff;
+}
+
+a.event-read-more {
+	color: $secondary;
+    border-bottom: 1px solid $secondary;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    bottom: 40px;
+    right: 100px;
+    position: absolute;
+}
+
+a.make-payment {
+	color: $secondary;
+    border-bottom: 1px solid $secondary;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    bottom: 40px;
+    left: 100px;
+    position: absolute;
+}
+
+.secondary-block {	
+	background-color: #000;
+}
+
+.secondary-block .content-block{
+    color: #fff;
+	padding:7% 0 0 7%;		
+}
+
+.secondary-block .content-block .title{	
+	font-family: 'Inter';
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+.secondary-block .content-block .body{	
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	width: 85%;
+    padding: 30px 0;
+}
+
+.secondary-block .content-block .date{	
+	font-family: 'Inter';
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.secondary-block .content-block .title span{
+	width: 40px;
+    height: 10px;
+    background: $secondary;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bottom-button-block.read{
+	right: 0;
+    bottom: -30px;
+    background: $secondary;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    padding: 35px;
+}
+
+.upcoming-event,
+.state-bearers,
+.featured-players,
+.ready-to-join{
+	margin: 80px auto;
+    width: 85%;
+}
+
+.upcoming-event .title span{
+	font-family: Josefin Sans;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 32px;
+	color: #000000;
+	float:left;
+}
+
+.upcoming-event .title a{
+	float:right;
+	color:$primary !important;
+	font-weight: 600;
+	font-size: 18px;
+	font-family: 'Inter';
+}
+
+.upcoming-event .events{
+	float:none;
+	clear:both;
+	width: 100%;
+}
+
+.upcoming-event .event{
+    background: #fff;
+    border-left: 4px solid $secondary;
+    padding: 20px 30px;
+	margin:2% 0;
+}
+
+.upcoming-event .event .date{
+	width: 10%;
+    float: left;
+}
+
+.upcoming-event .event .date .day {
+	font-size: 34px;
+    line-height: 36px;
+    color: $secondary;
+}
+
+.upcoming-event .event .date .month {
+	font-size: 20px;
+    color: $secondary;
+    line-height: 20px;
+}
+
+.upcoming-event .event:nth-child(2n) {
+	float:right;
+}
+
+.upcoming-event .event .title{
+	font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary;
+    width: 80%;
+    float: left;
+}
+
+.upcoming-event .event .location{
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+    margin-left: 55px;
+}
+
+.state-bearers .title span,
+.featured-players .title span{
+	font-family: Josefin Sans;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 32px;
+	color: #000000;
+	float:left;
+}
+
+.state-bearers .caption,
+.featured-players .caption{
+	color: #2C3E50;
+    font-weight: 500;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-left: 5px solid $secondary;
+    float: right;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.featured-players .caption{
+	border:0;
+
+}
+
+.state-bearers .block,
+.featured-players .block{
+	background: #fff;
+    padding: 15px;
+    text-align: center;
+	/*max-width: 360px;
+    height: 360px;*/
+}
+
+.state-bearers .name,
+.featured-players .name{
+	font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary;
+    text-align: left;
+}
+
+.state-bearers .avatar,
+.featured-players .avatar{	
+    margin: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    border-radius: 0 !important;
+    width: 200px;
+    height: fit-content;
+}
+
+.left-head-block {
+    position: absolute;
+    background: #f8f8f8;
+    padding-right: 20px;
+}
+
+.right-head-block {
+    position: absolute;
+    background: #f8f8f8;
+    padding-left: 20px;
+    right:0;
+}
+
+.title hr{
+    width:100%;
+    border-width: 2px;
+    border-color: $secondary;
+    float: left;
+}
+
+.middle-block .content-block{	
+    background: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #000000;
+    padding: 50px;
+    height: 420px;
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.ready-to-join .block{	
+    background: $secondary;
+    color: #fff;
+    padding: 50px;
+}
+
+.ready-to-join .title{
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+.ready-to-join .text{
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	text-align: left;
+    padding: 20px 0;
+}
+
+.ready-to-join .btn{
+	background: #fff;
+    border-radius: 0;
+    color: $primary;
+    margin: 70px;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.ready-to-join .btn:hover{
+    background-color: #3F88C5;
+    color:#fff;
+}
+
+.footer .newsletter button:hover{
+    background-color: #3F88C5 !important;
+    color:#fff !important;
+}
+
+.footer .footer-content{
+	background: #162C45;
+}
+
+.footer .newsletter{
+	background-color: $secondary;
+}
+
+.footer .text{
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.footer .title{
+	font-family: Josefin Sans;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:#fff;
+}
+
+.footer li{
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:#fff;
+	list-style: none;
+}
+
+.footer ul{
+	margin-left:-35px;
+}
+
+.footer .address{
+	margin-top: 20px;
+    color: #fff;
+    white-space: pre-line;
+    margin-bottom: 20px;
+}
+
+.footer .phone{
+	color: #fff;
+    margin: 10px 0;
+}
+
+.footer .phone .icon{
+	margin-right: 10px;
+    margin-top: -5px;
+}
+
+.footer .copy{
+	color: #BCBCBC;
+	font-family: 'Inter';
+}
+
+.footer .newsletter input{
+	border-radius:0;
+	background: rgba(255, 255, 255, 0.3);
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+}
+
+.footer .newsletter button{
+	font-weight: 600;
+    background: #fff;
+    border-radius: 0;
+    border: 2px solid #fff !important;
+    padding: 0;
+    width: 90px;
+}
+
+.footer .social-media{
+	position: absolute;
+    bottom: 30px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.footer footer {
+	padding-left:50px;
+}
+
+#main{
+    min-height:335px;
+}
+
+.registration-form .title{   
+    font-family: 'Josefin Sans'; 
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    padding:20px;
+}
+
+.registration-form .sub-title{ 
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.registration-form {
+    max-width:700px;
+    margin:0 auto;
+    font-family: 'Inter';
+}
+
+.section-title{
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: $primary;
+    margin-bottom:20px;
+}
+
+.section-subtitle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2C3E50;
+    padding: 20px 0;
+}
+
+.registration-form .btn{
+    font-family: 'Josefin Sans';
+}
+
+.registration-success{
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #000000;
+
+}
+
+.navbar-light {
+    box-shadow: 0 0 2rem rgb(35 44 57 / 20%);
+}
+
+.text-black{
+    color:#000;
+}
+
+.login-section {
+    margin: 15% 0 5% 0;
+}
+
+
+/* Responsive Screens */
+@media only screen and (max-device-width: 480px) {
+     .login-section {
+        margin: 30% 10% 10% 10%;
+    }
+
+	.secondary-block .content-block {
+		padding: 15px 25px;
+	}
+	.secondary-block .content-block .body {
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 24px;
+		padding: 30px 10px;
+		width:100%
+	}
+	.secondary-block .content-block .date,
+	.secondary-block .content-block .title {
+		font-size: 10px;
+		padding-left: 10px;
+	}
+
+	.bottom-button-block.read {
+		height: 40px;
+		bottom: 0;
+		right:0;
+		padding: 10px;
+		font-size: 16px;
+		width: 100px;
+	}
+
+	.upcoming-event, 
+	.featured-players, 
+	.ready-to-join,
+	.state-bearers {
+		margin: 30px 15px;
+		width: 91%;
+		text-align: center;
+	}
+
+	.upcoming-event .title span,
+	.featured-players .title span,
+	.state-bearers .title span {
+		float:none;
+		font-size: 26px;
+    	line-height: 26px;
+        position: relative;
+	}
+
+	.upcoming-event .title hr ,
+	.featured-players .title hr ,
+	.state-bearers .title hr{
+		float: none;
+		width: 40%;
+		margin: 10px auto;
+	}
+
+	.upcoming-event .title,
+	.featured-players .title,
+	.state-bearers .title {
+		padding-bottom:0 !important;
+	}
+
+	.upcoming-event .title a ,
+	.featured-players .title a ,
+	.state-bearers .title a{
+		font-size: 14px;
+        position: relative;
+	}
+
+	.upcoming-event .event{
+		padding:10px;
+	}
+
+	.upcoming-event .event .date {
+		width:15%
+	}
+
+	.upcoming-event .event .date .day {
+		font-size: 26px;
+		line-height: 34px;
+	}
+
+	.upcoming-event .event .date .month {
+		font-size: 14px;
+	}
+	
+	.upcoming-event .event .title {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.upcoming-event .event .location {
+		font-size: 12px;
+	}
+
+	.main-banner .bottom-content {
+		position: relative;
+		margin: 0;
+		width: 100%;
+		padding: 20px;
+	}
+	
+	.main-banner .bottom-content{
+		display: block;
+		height: auto;
+	}
+
+	.main-banner .bottom-content .content-section {
+		width: 100%;
+    	padding: 10px;
+	}
+
+	.bottom-button-block {
+		position: relative;
+		width: 50%;
+		padding: 14px;
+		font-size: 16px;
+		height: 50px;
+		margin:0;
+	}
+
+	.bottom-button-block.register-now {
+		left:0;
+		float:left;
+	}
+
+	.bottom-button-block.championships {
+		float:right;
+	}
+
+	.horizontal-layout nav.navbar .container {
+		width:100%;
+		display: block;
+	}
+
+	.horizontal-layout nav.navbar .navbar-nav {
+		position: absolute;
+		z-index: 999;
+    	background: #fff;
+		top: 70px;
+		display:none;
+        box-shadow: 0px 10px 1rem 0px rgb(35 44 57 / 20%);
+	}
+
+	.horizontal-layout nav.navbar .navbar-nav.active {
+		display:block;
+	}
+
+	.nav-item a:not(:first-child) {display: none;}
+	.nav-item a.icon {
+		float: right;
+		display: block;
+	}
+
+	.navbar-light .navbar-brand{
+		margin-left:30px;
+	}
+
+	.main-banner .text{
+		top: 90px;
+		font-size: 26px;
+		line-height: 34px;
+		left: 50px;
+	}
+
+	.state-bearers .block,
+	.featured-players .block{
+		width:100%;
+		margin:10px 0 !important;
+	}
+
+	.middle-block .content-block{
+		padding: 10px;
+		font-size: 16px;
+		height: auto;
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+
+	.middle-block .text{
+		margin: 10px;
+	}
+
+	.middle-block .content-block img{
+		width:30px;
+		margin:10px !important;
+	}
+
+	.ready-to-join .block{
+		padding:10px;
+	}
+
+	.ready-to-join .title{
+		font-size:26px;
+	}
+
+	.ready-to-join .text{
+		font-size:16px;
+	}
+
+	.ready-to-join .btn {
+		margin:10px auto;
+		padding: 15px;
+    	font-size: 16px;
+	}
+
+	.footer .footer-content{
+		padding:0px !important;
+		order:12;
+	}
+
+	.footer .footer-content img{
+		width:200px;
+	}
+
+	.footer .footer-content .pl-5{
+		padding:20px 40px !important;
+	}
+
+	.footer .footer-content .text{
+		padding-top:15px;
+	}
+
+	.footer .footer-content .title{
+		font-size: 20px;
+	}
+
+	.footer footer {
+		padding-left: 40px;
+		width: 90%;
+	}
+
+	.footer .newsletter {
+		padding: 20px !important;
+		order:1;
+	}
+
+	.footer .newsletter-block {
+		margin:10px !important;
+	}
+
+	.footer .newsletter-block .title{
+		font-size: 20px;
+	}
+	.footer .newsletter-block .social-media{
+		font-size: 20px;
+		bottom:15px;
+	}
+    .registration-form .title{
+        font-size: 24px;
+        padding:20px 0;
+    }
+
+    .registration-form .sub-title{
+        font-size: 16px;
+    }
+
+    .dropzone .dz-message:before {
+        width: 40px;
+        background-repeat: no-repeat;
+    }
+
+    #photo-error {
+        margin-left:-20px;
+    }
+
+    li.nav-item{
+        border:0;
+    }
+
+    li.nav-item.helpline{
+        text-align: left;
+        padding-bottom:10px;
+    }
+
+    .make-payment {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        display: block;
+        width: 140px;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    a.event-read-more {
+        bottom: 0 !important;
+        position: relative !important;
+        display: block !important;
+        right: 0;
+        width: 80px;
+        top: 10px;
+    }
+}
+
+
+
+.event{
+	min-height: 100px;
+	.slogan{
+		font-size: 12px;
+		color: #333;
+	}
+}
+.featured-players{
+	.swiper{
+		width: 100%;
+	}
+
+	
+	.swiper-pagination{
+		bottom: -50px!important;
+		.swiper-pagination-bullet{
+			background-color: transparent;
+			border: 2px solid $secondary;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+
+
+
+//view all tournament page
+
+.half-banner{
+	width: 100%;
+	height: 60vh;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-position: center;
+	}
+}
+.main-title{
+	font-size: 26px;
+	font-weight: 600;
+}
+.card-style{
+	width: 100%;
+	background-color: white;
+	padding: 10px 18px;
+	border-right: 2px solid $secondary;
+	h2{
+		font-size: 20px;
+		font-weight: 600;
+		color: $primary;
+	}
+}
+
+.tournament-item{
+	width: 100%;
+	height: auto;
+	min-height: 150px;
+	background-color: white;
+	display: flex;
+	margin-top: 10px;
+	padding:25px;
+	gap: 15px;
+	.dates{
+	
+		h3{
+			color: $secondary;
+			font-size: 24px;
+			font-weight: 600;
+			margin: 0;
+		}
+		p{
+			color: $secondary;
+			font-size: 15px;
+		}
+	}
+	.contents{
+		h3{
+			font-size: 20px;
+			color:#5a5a5a;
+			font-weight: 600;
+			margin: 0;
+		}
+		p{
+			font-size: 14px;
+			color: rgb(85, 85, 85);
+			margin: 0;
+		}
+		ul{
+			display: flex;
+			gap: 20px;
+			color: $secondary;
+			list-style: none;
+			margin: 10px 0px;
+			padding: 0;
+			li{
+				font-weight: 600;
+				display: flex;
+				align-items: center;
+				svg{
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
+
